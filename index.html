@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undangan Digital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Halaman 1 -->
+  <section class="page active" id="page1">
+    <div class="content">
+      <h1>Arham & Alfina</h1>
+      <button onclick="nextPage(2)">Lanjut</button>
+    </div>
+  </section>
+
+  <!-- Halaman 2 -->
+  <section class="page" id="page2">
+    <div class="content">
+      <h2>Undangan</h2>
+      <p>Dengan penuh rasa syukur, kami mengundang Bapak/Ibu/Saudara/i...</p>
+      <input type="text" id="guestName" placeholder="Nama Anda">
+      <button onclick="openInvitation()">Buka Undangan</button>
+    </div>
+  </section>
+
+  <!-- Halaman 3 -->
+  <section class="page" id="page3">
+    <div class="content">
+      <h2>Turut Mengundang</h2>
+      <p id="guestText">Kepada Yth. Bapak/Ibu/Saudara/i</p>
+      <button onclick="nextPage(4)">Lanjut</button>
+    </div>
+  </section>
+
+  <!-- Halaman 4 -->
+  <section class="page" id="page4">
+    <div class="content">
+      <h2>Akad & Resepsi</h2>
+      <div class="event">
+        <h3>Akad Nikah</h3>
+        <p>Senin, 13 Oktober 2025<br>10:00 WITA</p>
+        <small>📍 Paccerakkang (Detail sesuai peta)</small>
+      </div>
+      <div class="event">
+        <h3>Resepsi</h3>
+        <p>Senin, 13 Oktober 2025<br>12:00 WITA</p>
+        <small>📍 Paccerakkang (Detail sesuai peta)</small>
+      </div>
+      <a href="https://maps.app.goo.gl/pTmFvscBHfBzGAS18" target="_blank">Lihat Lokasi</a>
+    </div>
+  </section>
+
+  <audio id="bgMusic" autoplay loop>
+    <source src="assets/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
