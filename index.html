@@ -1,59 +1,75 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Undangan Digital</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Undangan Digital Arham & Alfina</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- Halaman 1 -->
-  <section class="page active" id="page1">
+  <section class="page active" id="page1" style="background-image: url('img/bg1.jpg');">
+    <div class="overlay"></div>
     <div class="content">
-      <h1>Arham & Alfina</h1>
+      <h3 class="typing" data-text="“Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan untukmu pasangan-pasangan dari jenismu sendiri, supaya kamu merasa tenteram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berpikir.” (QS. Ar-Rum: 21)"></h3>
+      <p class="typing" data-text="“Dan kawinkanlah orang-orang yang sendirian di antara kamu, dan orang-orang yang layak (menikah) dari hamba-hamba sahayamu yang laki-laki dan hamba-hamba sahayamu yang perempuan. Jika mereka miskin Allah akan memampukan mereka dengan karunia-Nya. Dan Allah Maha Luas (pemberian-Nya) lagi Maha Mengetahui.” (QS. An-Nur: 32)"></p>
+      <h1>Arham &amp; Alfina</h1>
       <button onclick="nextPage(2)">Lanjut</button>
     </div>
   </section>
 
   <!-- Halaman 2 -->
-  <section class="page" id="page2">
+  <section class="page" id="page2" style="background-image: url('img/bg2.jpg');">
+    <div class="overlay"></div>
     <div class="content">
-      <h2>Undangan</h2>
-      <p>Dengan penuh rasa syukur, kami mengundang Bapak/Ibu/Saudara/i...</p>
-      <input type="text" id="guestName" placeholder="Nama Anda">
+      <h1>Undangan</h1>
+      <p>Dengan penuh rasa syukur, kami bermaksud mengundang Bapak/Ibu/Saudara/i untuk hadir dalam acara pernikahan kami.</p>
+      <p>Silakan isi nama Anda untuk membuka undangan</p>
+      <input type="text" id="guestName" placeholder="Nama Anda" />
       <button onclick="openInvitation()">Buka Undangan</button>
     </div>
   </section>
 
   <!-- Halaman 3 -->
-  <section class="page" id="page3">
+  <section class="page" id="page3" style="background-image: url('img/bg3.jpg');">
+    <div class="overlay"></div>
     <div class="content">
       <h2>Turut Mengundang</h2>
-      <p id="guestText">Kepada Yth. Bapak/Ibu/Saudara/i</p>
+      <p id="guestText" class="typing" data-text="Kepada Yth. Bapak/Ibu/Saudara/i"></p>
+      <p class="typing" data-text="“Hai sekalian manusia, bertakwalah kepada Tuhan-mu yang telah menciptakan kamu dari seorang diri, dan daripadanya Allah menciptakan isterinya; dan dari pada keduanya Allah memperkembangbiakkan laki-laki dan perempuan yang banyak. Dan bertakwalah kepada Allah yang dengan (mempergunakan) nama-Nya kamu saling meminta satu sama lain, dan (peliharalah) hubungan silaturahim. Sesungguhnya Allah selalu menjaga dan mengawasi kamu.” (QS. An-Nisa: 1)"></p>
       <button onclick="nextPage(4)">Lanjut</button>
     </div>
   </section>
 
   <!-- Halaman 4 -->
-  <section class="page" id="page4">
+  <section class="page" id="page4" style="background-image: url('img/bg4.jpg');">
+    <div class="overlay"></div>
     <div class="content">
-      <h2>Akad & Resepsi</h2>
+      <h1>Arham &amp; Alfina</h1>
+      <p id="guestMention">Merupakan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir.</p>
+
+      <!-- Countdown -->
+      <div id="countdown" class="countdown">
+        Menuju Hari Bahagia: <span id="time"></span>
+      </div>
+
       <div class="event">
         <h3>Akad Nikah</h3>
-        <p>Senin, 13 Oktober 2025<br>10:00 WITA</p>
-        <small>📍 Paccerakkang (Detail sesuai peta)</small>
+        <p>Senin, 13 Oktober 2025<br>10:00 WITA<br>Paccerakkang</p>
+        <small>📍 Lokasi: <em>Detail sesuai peta</em></small>
       </div>
       <div class="event">
         <h3>Resepsi</h3>
-        <p>Senin, 13 Oktober 2025<br>12:00 WITA</p>
-        <small>📍 Paccerakkang (Detail sesuai peta)</small>
+        <p>Senin, 13 Oktober 2025<br>12:00 WITA<br>Paccerakkang</p>
+        <small>📍 Lokasi: <em>Detail sesuai peta</em></small>
       </div>
-      <a href="https://maps.app.goo.gl/pTmFvscBHfBzGAS18" target="_blank">Lihat Lokasi</a>
+      <a href="https://maps.app.goo.gl/pTmFvscBHfBzGAS18" target="_blank" class="btn-link">Lihat Lokasi</a>
     </div>
   </section>
 
   <audio id="bgMusic" autoplay loop>
-    <source src="assets/music.mp3" type="audio/mpeg">
+    <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mpeg">
   </audio>
 
   <script src="script.js"></script>
